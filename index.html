@@ -13,6 +13,27 @@
         <title>Ami Amigo | Moses Nandi Portfolio Page</title>
     </head>
     <body>
+
+        <div class="navigation">
+            <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+
+            <label for="navi-toggle" class="navigation__button">
+                <span class="navigation__icon">&nbsp;</span>
+            </label>
+
+            <div class="navigation__background">&nbsp;</div>
+
+            <nav class="navigation__nav">
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span>01</span>About Natours</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span>02</span>Your benefits</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span>03</span>Popular tours</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span>04</span>Stories</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span>05</span>Book now</a></li>
+                </ul>
+            </nav>
+        </div>
+
         <header class="header">
             <div class="header__logo-box">
                 <img src="img/amdg.png" alt="logo" class="header__logo">
@@ -20,8 +41,11 @@
 
             <div class="header__text-box">
                 <h1 class="heading-primary">
-                    <span class="heading-primary--main">Ami Amigo</span>
-                    <span class="heading-primary--sub">Inspired by true events</span>
+                    <!-- <span class="heading-primary--main">Ami Amigo</span>
+                    <span class="heading-primary--sub">Inspired by true events</span> -->
+
+                    <span class="heading-primary--main">Outdoors</span>
+                    <span class="heading-primary--sub">Is where life happens</span>
                 </h1>
 
                 <a href="#" class="btn btn--white btn--animated">Discover my story</a>
@@ -124,7 +148,7 @@
                 </div>
             </section>
 
-            <section class="section-projects">
+            <section class="section-projects" id="section-projects">
                     <div class="u-center-text u-margin-bottom-big">
                         <h2 class="heading-secondary">
                             <!-- Most popular tours -->
@@ -160,7 +184,7 @@
                                             <p class="card__price-only">Only</p>
                                             <p class="card__price-value">$297</p>
                                         </div>
-                                        <a href="#" class="btn btn--white">Book now!</a>
+                                        <a href="#popup" class="btn btn--white">Book now!</a>
 
                                     </div>
                                 </div>
@@ -194,7 +218,7 @@
                                                 <p class="card__price-only">Only</p>
                                                 <p class="card__price-value">$497</p>
                                             </div>
-                                            <a href="#" class="btn btn--white">Book now!</a>
+                                            <a href="#popup" class="btn btn--white">Book now!</a>
                                         </div>
                                     </div>
                                 </div>
@@ -227,7 +251,7 @@
                                                     <p class="card__price-only">Only</p>
                                                     <p class="card__price-value">$897</p>
                                                 </div>
-                                                <a href="#" class="btn btn--white">Book now!</a>
+                                                <a href="#popup" class="btn btn--white">Book now!</a>
         
                                             </div>
                                         </div>
@@ -354,7 +378,17 @@
 
         <footer class="footer">
             <div class="footer__logo-box">
-                <img src="img/logo-green-2x.png" alt="Full logo" class="footer__logo">
+
+                <picture class="footer__logo">
+                    <source srcset="img/logo-green-small-1x.png 1x, img/logo-green-small-2x.png 2x"
+                            media="(max-width: 37.5em)">
+                        <img srcset="img/logo-green-1x.png 1x,img/logo-green-2x.png 2x" alt="Full logo">
+
+                </picture>
+
+
+
+               
             </div>
             <div class="row">
                 <div class="col-1-of-2">
@@ -376,6 +410,28 @@
                 </div>
             </div>
         </footer>
+
+        <div class="popup" id="popup">
+            <div class="popup__content">
+                <div class="popup__left">
+                    <img src="img/nat-8.jpg" alt="Tour photo" class="popup__img">
+                    <img src="img/nat-9.jpg" alt="Tour photo" class="popup__img">
+                </div>
+                <div class="popup__right">
+                    <a href="#section-projects" class="popup__close">&times;</a>
+                    <h2 class="heading-secondary u-margin-bottom-small">Start booking now</h2>
+                    <h3 class="heading-tertiary u-margin-bottom-small">Important &ndash; Please read these terms before booking</h3>
+                    <p class="popup__text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat magnam harum aperiam repudiandae non perspiciatis, dolorum quas, 
+                        modi consectetur exercitationem beatae voluptatibus aliquam quos in, doloremque ex nesciunt qui asperiores.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque officia voluptate saepe maxime autem id quia porro placeat voluptas 
+                        illum amet aperiam eius facere nisi est, sunt laudantium dicta quis?
+                    </p>
+                    <a href="#" class="btn btn--green">Book now</a>
+
+                </div>
+            </div>
+        </div>
 
         <!-- <section class="grid-test">
             <div class="row">
